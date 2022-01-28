@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="navController"
+            type="androidx.navigation.NavController" />
+
+        <import type="com.app.randomuser.R" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_color"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".ui.randomUserFragments.BaseFragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:elevation="10dp"
+            android:onClick="@{()-> navController.navigate(R.id.action_baseFragment_to_userListFragment)}"
+            app:cardBackgroundColor="@android:color/darker_gray"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="RANDOM USER APP"
+                android:textSize="22sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:elevation="10dp"
+            android:onClick="@{()-> navController.navigate(R.id.action_baseFragment_to_weatherBaseFragment)}"
+            app:cardBackgroundColor="@android:color/darker_gray"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="WEATHER APP"
+                android:textSize="22sp" />
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</layout>
