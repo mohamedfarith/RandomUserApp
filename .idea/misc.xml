@@ -6,14 +6,15 @@
         <entry key="..\:/Work/RandomUser/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22083333333333333" />
         <entry key="..\:/Work/RandomUser/app/src/main/res/layout-land/fragment_search.xml" value="0.16856392294220665" />
         <entry key="..\:/Work/RandomUser/app/src/main/res/layout-land/fragment_user_info.xml" value="0.16856392294220665" />
+        <entry key="..\:/Work/RandomUser/app/src/main/res/layout-land/fragment_weather_base.xml" value="0.16856392294220665" />
         <entry key="..\:/Work/RandomUser/app/src/main/res/layout/activity_main.xml" value="0.20052083333333334" />
         <entry key="..\:/Work/RandomUser/app/src/main/res/layout/adapter_item.xml" value="0.20052083333333334" />
-        <entry key="..\:/Work/RandomUser/app/src/main/res/layout/dummy.xml" value="0.264" />
+        <entry key="..\:/Work/RandomUser/app/src/main/res/layout/dummy.xml" value="0.2" />
         <entry key="..\:/Work/RandomUser/app/src/main/res/layout/fragment_base.xml" value="0.2" />
         <entry key="..\:/Work/RandomUser/app/src/main/res/layout/fragment_search.xml" value="0.20052083333333334" />
         <entry key="..\:/Work/RandomUser/app/src/main/res/layout/fragment_user_info.xml" value="0.20052083333333334" />
         <entry key="..\:/Work/RandomUser/app/src/main/res/layout/fragment_user_list.xml" value="0.20052083333333334" />
-        <entry key="..\:/Work/RandomUser/app/src/main/res/layout/fragment_weather_base.xml" value="0.18229166666666666" />
+        <entry key="..\:/Work/RandomUser/app/src/main/res/layout/fragment_weather_base.xml" value="0.10400000000000001" />
         <entry key="..\:/Work/RandomUser/app/src/main/res/layout/home_fragment.xml" value="0.18229166666666666" />
         <entry key="..\:/Work/RandomUser/app/src/main/res/layout/user_profile_fragment.xml" value="0.20052083333333334" />
       </map>

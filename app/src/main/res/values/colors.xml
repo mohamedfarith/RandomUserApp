@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="base_color">#3A3F5C</color>
+    <color name="card_background">#3CF1EBF1</color>
+    <color name="weather_background">#4D363837</color>
 </resources>

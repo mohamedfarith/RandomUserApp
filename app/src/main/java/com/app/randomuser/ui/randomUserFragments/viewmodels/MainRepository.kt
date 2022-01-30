@@ -3,13 +3,14 @@ package com.app.randomuser.ui.randomUserFragments.viewmodels
 import com.app.randomuser.models.UserInfo
 import com.app.randomuser.room.RoomInstance
 import com.app.randomuser.services.RandomUserInterface
+import com.app.randomuser.services.Retrofit
 import retrofit2.Response
 
-class MainRepository(var retrofitInterface: RandomUserInterface) {
+class MainRepository() {
 
 
     suspend fun getUserList(number: Int): Response<UserInfo> {
-        return retrofitInterface.getUserList(number)
+        return Retrofit.getInstance().getUserList(number)
 
     }
 
@@ -19,7 +20,7 @@ class MainRepository(var retrofitInterface: RandomUserInterface) {
         }
     }
 
-    suspend fun getAllResults(): UserInfo {
+    suspend fun getAllResults(): UserInfo?{
         return RoomInstance.getResultDao().getAllResults()
     }
 

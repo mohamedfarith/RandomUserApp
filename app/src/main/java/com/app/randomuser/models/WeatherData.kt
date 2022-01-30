@@ -19,8 +19,9 @@ data class WeatherData(
     @SerializedName("name") var name: String?,
     @SerializedName("cod") var cod: Int
 ) {
+
     fun getDate(): String {
-        val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH)
+        val simpleDateFormat = SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.ENGLISH)
         return simpleDateFormat.format(Date(dt * 1000.toLong()))
     }
 
@@ -45,23 +46,28 @@ data class WeatherData(
         @SerializedName("humidity") var humidity: Double,
     ) {
         fun getTemperature(): String {
-            return java.lang.String.valueOf(temp)
+            val value = java.lang.String.valueOf(temp)
+            return StringBuilder().append(value).append("°c").toString()
+        }
+
+        fun getFeelsLikeTemp(): String {
+            return "Feels like\n$feels_like °c"
         }
 
         fun getMinimumTemp(): String {
-            return "Minimum Temp: $temp_min"
+            return "Minimum Temp\n$temp_min °c"
         }
 
         fun getMaximumTemp(): String {
-            return "Maximum Temp: $temp_max"
+            return "Maximum Temp\n $temp_max °c"
         }
 
         fun getHumidityValue(): String {
-            return "$humidity %"
+            return "Humidity\n$humidity %"
         }
 
         fun getPressureValue(): String {
-            return "$pressure hpa"
+            return "Pressure\n$pressure hpa"
         }
     }
 
@@ -71,7 +77,7 @@ data class WeatherData(
     ) {
 
         fun getSpeedValue(): String {
-            return "$speed km/hr"
+            return "Wind\n$speed km/hr"
         }
     }
 
@@ -87,12 +93,12 @@ data class WeatherData(
         @SerializedName("sunset") var sunset: Int
     ) {
         fun getSunriseData(): String {
-            val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss z")
+            val simpleDateFormat = SimpleDateFormat("hh:mm:ss")
             return simpleDateFormat.format(Date(sunrise * 1000.toLong()))
         }
 
         fun getSunsetData(): String {
-            val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss z")
+            val simpleDateFormat = SimpleDateFormat("hh:mm:ss")
             return simpleDateFormat.format(Date(sunset * 1000.toLong()))
         }
 
