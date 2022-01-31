@@ -7,3 +7,5 @@ This Application uses <br/>
 5) Google location api <br/>
 6) Single Activity approach<br/>
 7) MVVM Architecture<br/>
+8) Retrofit for networking<br/>
+
